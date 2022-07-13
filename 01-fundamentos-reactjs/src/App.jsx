@@ -1,11 +1,15 @@
 // ****** Named Exports
 
+import { Header } from '../components/Header';
 import { Post } from './Post';
+
 import './styles.css';
 
 export function App() {
   return (
     <div>
+      <Header/>
+
       <Post
         author="Andressa Da Costa"
         content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum veniam, a possimus sit, asperiores corporis facere neque amet consequatur in suscipit dicta ad delectus minima rerum nisi, placeat obcaecati voluptatibus?"
