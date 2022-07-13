@@ -1,0 +1,10 @@
+.wrapper {
+  max-width: 70rem; /* 70*16px: 1120 */
+  margin: 2rem auto;
+  padding: 0 1rem;
+
+  display: grid;
+  grid-template-columns: 256px 1fr; /*side bar fixo e conteudo flexivel  */
+  gap: 2rem;
+  align-items: flex-start; /* pra fixar a side bar no topo e nao tentar acompanhar o tamanho do main */
+}
