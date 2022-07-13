@@ -1,6 +1,7 @@
 // ****** Named Exports
 
-import { Post } from './Post'
+import { Post } from './Post';
+import './styles.css';
 
 export function App() {
   return (
