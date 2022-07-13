@@ -1,24 +1,34 @@
 // ****** Named Exports
 
-import { Header } from '../components/Header';
-import { Post } from './Post';
+import { Header } from './components/Header'
+import { Post } from './Post'
 
-import './global.css';
+import styles from './App.module.css'
+
+import './global.css'
 
 export function App() {
   return (
     <div>
-      <Header/>
+        <Header />
+      
+      <div className={styles.wrapper}>
 
-      <Post
-        author="Andressa Da Costa"
-        content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum veniam, a possimus sit, asperiores corporis facere neque amet consequatur in suscipit dicta ad delectus minima rerum nisi, placeat obcaecati voluptatibus?"
-      />
+        <aside>
+          SideBar
+        </aside>
 
-      <Post
-       author="Gabriel Buzzi"
-       content="Um novo post muito legal" 
-      />
+        <main>
+          <Post
+            author="Andressa Da Costa"
+            content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum veniam, a possimus sit, asperiores corporis facere neque amet consequatur in suscipit dicta ad delectus minima rerum nisi, placeat obcaecati voluptatibus?"
+          />
+
+          <Post author="Gabriel Buzzi" content="Um novo post muito legal" />
+        </main>
+
+      </div>
+
     </div>
   )
 }
