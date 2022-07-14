@@ -8,3 +8,15 @@
   gap: 2rem;
   align-items: flex-start; /* pra fixar a side bar no topo e nao tentar acompanhar o tamanho do main */
 }
+
+@media (max-width: 768px) {
+  html {
+    font-size: 87.5%; /* 16 -> 100%
+                        14 -> x? = 14*100/16: 87,5 */
+ 
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
+}
