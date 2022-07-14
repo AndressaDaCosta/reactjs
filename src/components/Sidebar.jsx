@@ -6,7 +6,7 @@ export function Sidebar() {
     <aside className={styles.sidebar}>
       <img
         className={styles.cover}
-        src="https://images.unsplash.com/photo-1597638533602-d20720b2b9cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxjb2xsZWN0aW9uLXBhZ2V8MXwzNTU4fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+        src="https://images.unsplash.com/photo-1519936842580-b4bd2cff9352?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=570&q=50"
         alt=""
       />
 
@@ -19,7 +19,7 @@ export function Sidebar() {
       </div>
       <footer>
         <a href="#">
-          <PencilLine size={15} /*color="blueviolet"*//>
+          <PencilLine size={19} /*color="blueviolet"*//>
           Editar seu Perfil
         </a>
       </footer>
