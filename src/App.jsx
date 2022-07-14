@@ -1,35 +1,32 @@
 // ****** Named Exports
 
-import { Header } from './components/Header';
-import { Post } from './components/Post';
-import { Sidebar } from './components/Sidebar'
+import { Header } from "./components/Header"
+import { Post } from "./components/Post"
+import { Sidebar } from "./components/Sidebar"
 
+import styles from "./App.module.css"
 
-import styles from './App.module.css';
-
-import './global.css';
-
-
+import "./global.css"
 
 export function App() {
-  return (
-    <div>
-      <Header />
+	return (
+		<div>
+			<Header />
 
-      <div className={styles.wrapper}>
-        <Sidebar />
+			<div className={styles.wrapper}>
+				<Sidebar />
 
-        <main>
-          <Post
-            author="Andressa Da Costa"
-            content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum veniam, a possimus sit, asperiores corporis facere neque amet consequatur in suscipit dicta ad delectus minima rerum nisi, placeat obcaecati voluptatibus?"
-          />
+				<main>
+					<Post
+						author="Andressa Da Costa"
+						content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum veniam, a possimus sit, asperiores corporis facere neque amet consequatur in suscipit dicta ad delectus minima rerum nisi, placeat obcaecati voluptatibus?"
+					/>
 
-          <Post author="Gabriel Buzzi" content="Um novo post muito legal" />
-        </main>
-      </div>
-    </div>
-  )
+					{/* <Post author="Gabriel Buzzi" content="Um novo post muito legal" /> */}
+				</main>
+			</div>
+		</div>
+	)
 }
 
 //componente: funçao que retorna html
